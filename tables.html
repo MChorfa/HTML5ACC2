@@ -1,0 +1,201 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="fr-ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="fr-ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="fr-ca"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="fr-ca"> <!--<![endif]-->
+<head>
+	<title></title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="description" content=""/>
+  	<meta name="author" content=""/>
+  	<meta name="Syndicate-source" content="" />
+	<meta name="original-source" content= ""/>
+  	<meta name="robots" content="index, follow"/>
+  	<meta name="robots" content="noindex, follow"/>
+  	<meta name="robots" content="index, nofollow"/>
+	<link rel="alternate" type="application/rss+xml"  title="" charset="utf-8"/>
+	
+
+	<!-- The framework -->
+	<link rel="stylesheet" href="css/inuit.css" />
+	
+	<!-- Your extension -->
+  	<link rel="stylesheet" media="all" href="css/ie.css"/>
+	<link rel="stylesheet" media="all" href="css/nivo-slider.css"/>
+	<link rel="stylesheet" media="all" href="css/main.css"/>
+	<link rel="stylesheet" media="handheld" href="css/handheld.css"/>
+	<link rel="stylesheet" media="all" href="js/fancybox/jquery.fancybox-1.3.4.css"/>	
+	
+	<!-- Favicons and the like (avoid using transparent .png) -->
+	<link rel="shortcut icon" href="icon.png" />
+	<link rel="apple-touch-icon-precomposed" href="icon.png" />
+	
+	
+	<script src="js/libs/modernizr-1.7.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<table summary="Le nombre d'employés et l'année de création de quelques entreprises imaginaires.">
+	<caption>Tableau 1 : données de l'entreprise</caption>
+	<tr>
+
+	<td></td>
+	<th scope="col">Employees</th>
+	<th scope="col">Founded</th>
+	</tr>
+
+	<tr>
+	<th scope="row">ACME Inc</th>
+	<td>1000</td>
+	<td>1947</td>
+
+	</tr>
+	<tr>
+	<th scope="row">XYZ Corp</th>
+	<td>2000</td>
+	<td>1973</td>
+
+	</tr>
+	</table>
+
+
+
+
+
+
+	<table summary="Le nombre d'employés et l'année de création de quelques entreprises imaginaires.">
+	<caption>Tableau 1 : données de l'entreprise</caption>
+	<thead>
+	<tr>
+	<th scope="col">Entreprise</th>
+	<th scope="col">Employés</th>
+	<th scope="col">Fondée en</th>
+
+	</tr>
+
+	</thead>
+	<tbody>
+	<tr>
+	<td scope="row">ACME Inc</td>
+	<td>1000</td>
+	<td>1947</td>
+
+	</tr>
+	<tr>
+	<td scope="row">XYZ Corp</td>
+	<td>2000</td>
+	<td>1973</td>
+
+	</tr>
+	</tbody>
+	<tfoot>
+	<tr>
+	<td></td>
+	</tr>
+	</tfoot>
+	</table>
+
+
+
+
+
+	<table class="extbl" summary="Le nombre d'employés et l'année de création de quelques entreprises imaginaires.">
+	<caption>Tableau 1 : données de l'entreprise</caption>
+	<thead>
+
+	<tr>
+	<td rowspan="2"></td>
+	<th id="employes" colspan="2">Employés</th>
+	<th id="fondee" rowspan="2">Fondée en</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<th id="hommes">Hommes</th>
+	<th id="femmes">Femmes</th>
+
+	</tr>
+	<tr>
+	<th id="acme">ACME Inc</th>
+	<td headers="acme employes hommes">700</td>
+	<td headers="acme employes femmes">300</td>
+	<td headers="acme fondee">1947</td>
+	</tr>
+	<tr>
+	<th id="xyz">XYZ Corp</th>
+	<td headers="xyz employes hommes">1200</td>
+
+	<td headers="xyz employes femmes">800</td>
+	<td headers="xyz fondee">1973</td>
+	</tr>
+	</tbody>
+	<tfoot>
+	<tr>
+	<td></td>
+	</tr>
+	</tfoot>
+	</table>
+
+
+	
+		<!-- JavaScript at the bottom for fast page loading -->
+		<!--Section de javaScript-->
+		<noscript>
+		<p class="nojavascript"><span>La fonction JavaScript n'est pas prise en charge par votre navigateur. Afin de profiter au maximum de notre site, nous vous recommandons la dernière version de <a href="http://www.getfirefox.com" target="_blank" title="Télécharger Firefox pour PC [nouvelle fenêtre]">Firefox</a> pour PC ou <a href="http://m.opera.com/" target="_blank" title="Télécharger Opéra pour téléphone Mobile [nouvelle fenêtre]">Opéra</a> pour votre téléphone mobile. Si vous avez désactivé la fonction JavaScript de votre navigateur, voici comment le réactiver : <a href="http://www.google.com/support/bin/answer.py?answer=23852" target="_blank" title="Tutorial sur le site de Google [nouvelle fenêtre]">"Comment activer JavaScript"</a>.</span></p>
+		</noscript>
+	  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+
+	  	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+	  	<script>window.jQuery || document.write("<script src='js/libs/jquery-1.6.js'>\x3C/script>")</script>
+	 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/libs/jquery-1.4.3.min.js"></script>
+		<script type="text/javascript" src="js/libs/selectivizr.js"></script>
+		<script type="text/javascript" src="js/mylibs/css3-mediaqueries.js"></script>
+		<script type="text/javascript" src="js/libs/KnocKout.js"></script>
+		<script type="text/javascript" src="js/libs/jquery.nivo.slider.pack.js"></script>
+		<script type="text/javascript" src="js/fancybox/jquery.easing-1.3.pack.js"></script>
+		<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+		<script type="text/javascript" src="js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+		<script type="text/javascript" src="js/libs/cufon.js"></script>
+	  <!-- scripts concatenated and minified via ant build script-->
+	  <script src="js/plugins.js"></script>
+	  <script src="js/script.js"></script>
+		<script type="text/javascript">
+	   $(window).load(function() {
+	       $('#slider').nivoSlider({directionNavHide:false});
+	   });
+		//	cufon.now();
+	   </script>
+	  <!-- end scripts-->
+
+
+	  <!--[if lt IE 7 ]>
+	    <script src="js/libs/dd_belatedpng.js"></script>
+	    <script>DD_belatedPNG.fix("img, .png_bg"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+	  <![endif]-->
+
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-23207621-1']);
+		  _gaq.push(['_setDomainName', '.chorfa.net']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+
+</body>
+</html>

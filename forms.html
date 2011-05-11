@@ -1,0 +1,342 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="fr-ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="fr-ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="fr-ca"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="fr-ca"> <!--<![endif]-->
+<head>
+	<title></title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="description" content=""/>
+  	<meta name="author" content=""/>
+  	<meta name="Syndicate-source" content="" />
+	<meta name="original-source" content= ""/>
+  	<meta name="robots" content="index, follow"/>
+  	<meta name="robots" content="noindex, follow"/>
+  	<meta name="robots" content="index, nofollow"/>
+	<link rel="alternate" type="application/rss+xml"  title="" charset="utf-8"/>
+	
+
+	<!-- The framework -->
+	<link rel="stylesheet" href="css/inuit.css" />
+	
+	<!-- Your extension -->
+  	<link rel="stylesheet" media="all" href="css/ie.css"/>
+	<link rel="stylesheet" media="all" href="css/nivo-slider.css"/>
+	<link rel="stylesheet" media="all" href="css/main.css"/>
+	<link rel="stylesheet" media="handheld" href="css/handheld.css"/>
+	<link rel="stylesheet" media="all" href="js/fancybox/jquery.fancybox-1.3.4.css"/>	
+	
+	<!-- Favicons and the like (avoid using transparent .png) -->
+	<link rel="shortcut icon" href="icon.png" />
+	<link rel="apple-touch-icon-precomposed" href="icon.png" />
+	
+	
+	<script src="js/libs/modernizr-1.7.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<form action="" method= "">
+
+	<fieldset id= "order">
+
+	<legend> Order </legend>
+
+	<ul>
+
+	<li><label for= “pizza”>Select Pizza: </label><input type=  “text” name= “pizza”  list= “pizza” placeholder= “Click to select” />
+
+	<datalist id= “pizza”>
+
+	<option value= “Veggie Delight” />
+
+	<option value= “Meat Madness” />
+
+	<option value= “Cheese” />
+
+	</datalist>
+
+	</li>
+
+	<li><label for= “size”>Select Size: </label><input type= “text” name= “size”  list= “size” placeholder= “Click to select” />
+
+	<datalist id= “size”>
+
+	<option value= “Large” />
+
+	<option value= “Medium” />
+
+	<option value= “Small” />
+
+	</datalist>
+
+	</li>
+
+	<li><label for= “quantity”>Select Quantity:</label><input type= “number” name= “quantity” id= “quantity” max= “10″ min= “1″ value= “1″  /></li>
+
+	</ul>
+
+	</fieldset>
+
+	<fieldset id= “delivery”> <legend>Delivery Information </legend>
+
+	<ul>
+
+	<li><label for= “Customer”>Name: </label><input type= “text” name= “Customer” id= “Customer” /></li>
+
+	<li><label for= “Email”>Email: </label> <input type= “email” name= “Email” id= “Email” placeholder= “name@example.com” /></li>
+
+	<li><label for= “Phone”>Phone: </label><input type= “telephone” name= “Phone” id= “Phone” /></li>
+
+	<li><label for= “Add”>Street Address: </label> <textarea id= “Add” rows= “6″></textarea></li>
+
+	<li><label for= “Sate”>State: </label> <input type= “text” list= “state” name= “State” id= “State” placeholder= “Pick a State” />
+
+	<datalist id= “state”>
+
+	<option value= “California” />
+
+	<option value= “Oregon” />
+
+	<option value= “Washington” />
+
+	</datalist>
+
+	<li><label for= “zip”>ZIP Code: </label><input type= “text” id= “zip” /></li>
+
+	<li><label for= “time”>Delivery Time:</label> <input type= “time” /></li>
+
+	</ul>
+
+	</fieldset>
+
+	<fieldset id= “payment” > <legend>Payment</legend>
+
+	<ul>
+
+	<li>
+
+	<fieldset id= “card”>
+
+	<legend>Card Type</legend>
+
+	<ul>
+
+	<li><label for= “visa”> <img src= “images/visa.png” /> </label> <input type= “radio” id= “visa” /></li>
+
+	<li><label for= “amx”><img src= “images/amx.png” /> </label><input type= “radio” id= “amx” /></li>
+
+	<li><label for= “mc”><img src= “images/mc.png” /> </label><input type= “radio” id= “mc” /></li>
+
+	</ul>
+
+	</fieldset>
+
+	<li><label for= “cardNum”>Card Number: </label><input type= “text” id= “cardNum” placeholder= “xxx-xxx-xxx-xxx” /></li>
+
+	<li><label for= “security”>Security Code: </label><input type= “text” id= “security” placeholder= “Enter 3 digit code” /></li>
+
+	<li><input type= “submit” value= “Place Order” id= “send” /></li>
+
+	</ul>
+
+	</fieldset>
+
+	</form>
+	<div id="page">
+	<h1>Les différents contrôles des formulaires XHTML</h1>
+
+	<!-- Ouverture du formulaire qui sera soumis par email (on doit avoir un logiciel de courriel fonctionnel tel Outlook ou Thunderbird) -->
+	<form  method="post"  action="mailto:coco@hotmail.com"  enctype="text/plain">
+
+	<!-- Les différents champs de saisie -->
+
+	<div>
+		<label for="unTexte">Champ de saisie avec valeur par défaut:</label>
+		<input  type="text"  name="unTexte"  id="unTexte"  value="Un texte quelconque" />
+	</div>
+
+	<div>
+		<label for="unTexteLimite">Champ de saisie avec tailles limitées pour l'affichage et la saisie:</label>
+		<input  type="text"  name="unTexteLimite"  id="unTexteLimite"  size="20"  maxlength="5" />
+	</div>
+
+	<div>
+		<label for="motDePasse">Champ de saisie d'un mot de passe:</label>
+		<input  type="password"  name="motDePasse"  id="motDePasse" />
+	</div>
+
+	<!-- Champ caché -->
+	<div>
+		<label for="leSecret">Champ caché (on ne voit rien à l'écran):</label>
+		<input  type="hidden"  name="leSecret"  id="leSecret"  value="Je suis le père Noël" />
+	</div>
+
+	<!-- Zone de saisie multi-lignes -->
+	<div>
+		<label for="commentaires">Zone de saisie (plusieurs lignes):</label>
+		<textarea  name="commentaires"  id="commentaires"  rows="4"  cols="40">Entrez vos commentaires ici.</textarea>
+	</div>
+
+	<!-- Groupe de boîtes à cocher -->
+	<fieldset>
+		<legend>Vos maladies</legend>
+		Groupe de boîtes à cocher:
+		<ul>
+			<li>
+				<input  type="checkbox"  name="maladies"  id="maladieAstme"  value="As"  checked="checked" />
+				<label for="maladieAstme">Asthme</label>
+			</li>
+			<li>
+				<input  type="checkbox"  name="maladies"  id="maladieCancer"  value="Ca" />
+				<label for="maladieCancer">Cancer</label>
+			</li>
+			<li>
+				<input  type="checkbox"  name="maladies"  id="maladieSchizophrenie"  value="Sc"  checked="checked" />
+				<label for="maladieSchizophrenie">Schizophrènie</label>
+			</li>
+		</ul>
+	</fieldset>
+
+	<!-- Groupe de boutons radio -->
+	<fieldset>
+		<legend>Sexe</legend>
+		Groupe de boutons radio:
+		<ul>
+			<li>
+				<input  type="radio"  name="sexe"  id="sexeHomme"  value="H"  checked="checked" />
+				<label for="sexeHomme">Homme</label>
+			</li>
+			<li>
+				<input  type="radio"  name="sexe"  id="sexeFemme"  value="F" />
+				<label for="sexeFemme">Femme</label>
+			</li>
+		</ul>
+	</fieldset>
+
+	<!-- Les différentes listes de choix (listes déroulantes) et zones de liste -->
+
+	<div>
+		<label for="langage">Liste de choix (déroulante):</label>
+		<select  name="langage"  id="langage">
+			<optgroup label="Langages Web"> <!-- optionnel; sert à faire un regroupement -->
+				<option> JavaScript </option>
+				<option selected="selected"> JSP </option>
+				<option> ASP 3 </option>
+				<option> ASP.NET </option>
+				<option> PHP </option>
+				<option> CGI </option>
+			</optgroup>
+			<optgroup label="Autres langages">
+				<option> Java </option>
+				<option> C# </option>
+				<option> C++ </option>
+				<option> Visual Basic </option>
+				<option> Delphi </option>
+				<option> VBScript </option>
+			</optgroup>
+		</select>
+	</div>
+
+	<div>
+		<label for="couleurPreferee">Zone de liste:</label>
+		<select  name="couleurPreferee"  id="couleurPreferee"  size="3">
+			<option value="red"> Rouge </option> 
+			<option value="green"> Vert </option> 
+			<option value="blue"> Bleu </option> 
+			<option value="magenta"> Violet </option> 
+			<option value="white" selected="selected"> Blanc </option> 
+			<option value="black"> Noir </option> 
+			<option value="yellow"> Jaune </option> 
+		</select>
+	</div>
+
+	<div>
+		<label for="lesOptions">Zone de liste à choix multiples et pré-sélections:</label>
+		<select  name="lesOptions"  id="lesOptions"  size="7"  multiple="multiple">
+			<option> Option 1 </option>
+			<option  selected="selected"> Option 2 </option>
+			<option> Option 3 </option>
+			<option> Option 4 </option>
+			<option  selected="selected"> Option 5 </option>
+			<option> Option 6 </option>
+			<option> Option 7 </option>
+		</select>
+	</div>
+
+	<!-- Contrôle permettant de sélectionner un fichier sur le poste du client -->
+	<div>
+		<label for="nomFichier">Champ pour la sélection d'un fichier à transférer vers un serveur Web ("upload"):</label>
+		<input  type="file"  name="nomFichier"  id="nomFichier" />
+	</div>
+
+	<!-- Les boutons de commande pour Réinitialiser le formulaire et pour l'Envoyer -->
+
+	<div>
+		<input  type="reset"   value="Effacer le formulaire" />
+
+		<input  type="submit"  value="Soumettre le formulaire" />
+	</div>
+
+	<!-- Fermeture du formulaire -->
+	</form>
+  </div>
+		<!-- JavaScript at the bottom for fast page loading -->
+		<!--Section de javaScript-->
+		<noscript>
+		<p class="nojavascript"><span>La fonction JavaScript n'est pas prise en charge par votre navigateur. Afin de profiter au maximum de notre site, nous vous recommandons la dernière version de <a href="http://www.getfirefox.com" target="_blank" title="Télécharger Firefox pour PC [nouvelle fenêtre]">Firefox</a> pour PC ou <a href="http://m.opera.com/" target="_blank" title="Télécharger Opéra pour téléphone Mobile [nouvelle fenêtre]">Opéra</a> pour votre téléphone mobile. Si vous avez désactivé la fonction JavaScript de votre navigateur, voici comment le réactiver : <a href="http://www.google.com/support/bin/answer.py?answer=23852" target="_blank" title="Tutorial sur le site de Google [nouvelle fenêtre]">"Comment activer JavaScript"</a>.</span></p>
+		</noscript>
+	  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+
+	  	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+	  	<script>window.jQuery || document.write("<script src='js/libs/jquery-1.6.js'>\x3C/script>")</script>
+	 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/libs/jquery-1.4.3.min.js"></script>
+		<script type="text/javascript" src="js/libs/selectivizr.js"></script>
+		<script type="text/javascript" src="js/mylibs/css3-mediaqueries.js"></script>
+		<script type="text/javascript" src="js/libs/KnocKout.js"></script>
+		<script type="text/javascript" src="js/libs/jquery.nivo.slider.pack.js"></script>
+		<script type="text/javascript" src="js/fancybox/jquery.easing-1.3.pack.js"></script>
+		<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+		<script type="text/javascript" src="js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+		<script type="text/javascript" src="js/libs/cufon.js"></script>
+	  <!-- scripts concatenated and minified via ant build script-->
+	  <script src="js/plugins.js"></script>
+	  <script src="js/script.js"></script>
+		<script type="text/javascript">
+	   $(window).load(function() {
+	       $('#slider').nivoSlider({directionNavHide:false});
+	   });
+		//	cufon.now();
+	   </script>
+	  <!-- end scripts-->
+
+
+	  <!--[if lt IE 7 ]>
+	    <script src="js/libs/dd_belatedpng.js"></script>
+	    <script>DD_belatedPNG.fix("img, .png_bg"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+	  <![endif]-->
+
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-23207621-1']);
+		  _gaq.push(['_setDomainName', '.chorfa.net']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+
+	</body>
+	</html>

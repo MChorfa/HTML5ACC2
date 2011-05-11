@@ -1,0 +1,256 @@
+/*------------------------------------*\
+	MAIN
+\*------------------------------------*/
+html{
+	font-family:"Helvetica Neue", Arial, sans-serif;
+	color:#262626;
+	background:#e5e5e5;
+	background:-moz-linear-gradient(-90deg,#c5c5c5,#e5e5e5) fixed;
+	background:-webkit-gradient(linear,left top,left bottom,from(#c5c5c5),to(#e5e5e5)) fixed;
+	/*background:#e4eef6;
+	background:-moz-linear-gradient(-90deg,#5998c7,#4a8ec2) fixed;
+	background:-webkit-gradient(linear,left top,left bottom,from(#5998c7),to(#4a8ec2)) fixed;*/
+}
+body{
+	background:none;
+	padding-top:50px;
+	text-shadow:0 -1px 0 rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.25);
+}
+#page{
+	margin:0 auto;
+	float:none;
+	text-align:center;
+}
+ul{margin:0;}
+
+
+
+
+
+/*------------------------------------*\
+	TYPE
+\*------------------------------------*/
+#statuPage
+{	white-space: pre;}
+h1{
+	font-weight:bold;
+	font-size:3em;
+	line-height:1;
+}
+a{
+	color:inherit;
+}
+p {
+	font-size:1em;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em; 
+}
+
+#nav li a {padding:3px 35px 3px 35px;}
+
+.sidenote {
+    text-indent:-0.7em;
+    width:12em;
+    margin-right:0;
+    font-size:0.8333em;
+    line-height:1.8em;
+    position:absolute;
+    top:0;
+    left:42.6em;
+}
+.footnote {
+    border-top:0.08333em solid #000;
+    margin-top:2.25em;
+    padding-top:0.667em;
+    margin-left:0;
+    width:45.5em;
+}
+.content {
+    position:relative;
+	background: #B7B7B7; /* Old browsers */
+	background: -moz-linear-gradient(top, #B7B7B7 0%, #E6E6E6 48%, #B7B7B7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B7B7B7), color-stop(48%,#E6E6E6), color-stop(100%,#B7B7B7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #B7B7B7 0%,#E6E6E6 48%,#B7B7B7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #B7B7B7 0%,#E6E6E6 48%,#B7B7B7 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #B7B7B7 0%,#E6E6E6 48%,#B7B7B7 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B7B7B7', endColorstr='#B7B7B7',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #B7B7B7 0%,#E6E6E6 48%,#B7B7B7 100%); /* W3C */
+}
+
+
+/*------------------------------------*\
+	IMAGES
+\*------------------------------------*/
+#logo{
+	margin-bottom:1.5em;
+	margin-top:-3em;
+}
+.navigation {padding-left:440px;}
+
+/*============================*/
+/*=== Custom Slider Styles ===*/
+/*============================*/
+#idSlider
+{
+	margin-top:-64px;
+	margin-left:220px;
+}
+#slider-wrapper {
+    background:url(../img/slider/slider.png) no-repeat;
+    width:494px;
+    height:310px;
+    margin:0 auto;
+    padding-top:23px;
+    margin-top:50px;
+}
+
+#slider {
+	position:relative;
+    width:430px;
+    height:250px;
+    margin-left:32px;
+	background:url(../img/slider/loading.gif) no-repeat 50% 50%;
+	background:#e4eef6;
+	background:-moz-linear-gradient(-90deg,#5998c7,#4a8ec2) fixed;
+	background:-webkit-gradient(linear,left top,left bottom,from(#5998c7),to(#4a8ec2)) fixed;
+}
+#slider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+#slider a {
+	border:0;
+	display:block;
+}
+
+.nivo-controlNav {
+	position:absolute;
+	left:163px;
+	bottom:12px;
+	background: #000000;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 3px;
+    border: 2px solid #CCC;
+    opacity: 0.7;
+    z-index: 99;
+	}
+	
+	.nivo-controlNav:hover{opacity: 1;}
+	
+.nivo-controlNav a {
+	display:block;
+	width:22px;
+	height:22px;
+	background:url(../img/slider/bullets.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin-right:0px;
+	float:left;
+}
+.nivo-controlNav a.active {
+	background-position:0 -22px;
+}
+
+.nivo-directionNav a {
+	display:block;
+	width:35px;
+	height:65px;
+	background:url(../img/slider/arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+}
+a.nivo-nextNav {
+	background-position:-35px 0;
+	right: -40px;
+}
+
+a.nivo-nextNav:hover{right: -41px;}
+
+a.nivo-prevNav {
+	left:-40px;
+}
+a.nivo-prevNav:hover{left: -41px;}
+
+.nivo-caption {
+    text-shadow:none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.nivo-caption a { 
+    color:#efe9d1;
+    text-decoration:underline;
+}
+
+.nivo-directionNav a{top: 40%;}
+
+
+/*------------------------------------*\
+	footer
+\*------------------------------------*/
+
+#footer
+{
+	border-top:solid 1px #e9e9e9;
+	padding:10px;
+	color:#292929;
+	background: #B5B5B5;
+	    -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 1px,
+	        black 0px 1px 3px inset,
+	        rgba(0, 0, 0, 0.4) 0px -5px 12px inset;
+	    -moz-box-shadow: rgba(255, 255, 255, 0.4) 0 1px,
+	        black  0px 1px 3px inset,
+	        rgba(0, 0, 0, 0.4) 0px -5px 12px inset;
+	    box-shadow: rgba(255, 255, 255, 0.4) 0 1px,
+	        black  0px 1px 3px inset,
+	        rgba(0, 0, 0, 0.4) 0px -5px 12px inset;
+	    text-shadow: rgba(255, 255, 255, 0.3) 0px 1px;
+	color:#292929;
+}
+#copyright
+{
+	padding:10px;
+	font-size:small;
+	color:#e5e5e5;
+	background:#171717;
+	background:-moz-linear-gradient(-90deg,#171717,#121212) fixed;
+	background:-webkit-gradient(linear,left top,left bottom,from(#171717),to(#121212)) fixed;
+	
+}
+/*------------------------------------*\
+	NARROW
+\*------------------------------------*/
+/*
+CSS for tablets and narrower devices
+*/
+
+
+
+
+
+@media (min-width: 721px) and (max-width: 960px){}
+/*--- END NARROW ---*/
+
+
+
+
+
+/*------------------------------------*\
+	MOBILE
+\*------------------------------------*/
+/*
+CSS for mobile devices.
+Linearise it!
+*/
+
+
+
+
+
+@media (max-width: 720px){
+body{
+	font-size:0.75em;
+}
+}
+/*--- END MOBILE ---*/

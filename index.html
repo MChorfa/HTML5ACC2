@@ -1,10 +1,238 @@
-<!DOCTYPE HTML>
-<html lang="ru-RU">
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="fr-ca"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="fr-ca"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="fr-ca"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="fr-ca"> <!--<![endif]-->
 <head>
-	<meta charset="UTF-8">
 	<title></title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="description" content=""/>
+  	<meta name="author" content=""/>
+  	<meta name="Syndicate-source" content="" />
+	<meta name="original-source" content= ""/>
+  	<meta name="robots" content="index, follow"/>
+  	<meta name="robots" content="noindex, follow"/>
+  	<meta name="robots" content="index, nofollow"/>
+	<link rel="alternate" type="application/rss+xml"  title="" charset="utf-8"/>
+	
+
+	<!-- The framework -->
+	<link rel="stylesheet" href="css/inuit.css" />
+	
+	<!-- Your extension -->
+  	<link rel="stylesheet" media="all" href="css/ie.css"/>
+	<link rel="stylesheet" media="all" href="css/nivo-slider.css"/>
+	<link rel="stylesheet" media="all" href="css/main.css"/>
+	<link rel="stylesheet" media="handheld" href="css/handheld.css"/>
+	<link rel="stylesheet" media="all" href="js/fancybox/jquery.fancybox-1.3.4.css"/>	
+	
+	<!-- Favicons and the like (avoid using transparent .png) -->
+	<link rel="shortcut icon" href="icon.png" />
+	<link rel="apple-touch-icon-precomposed" href="icon.png" />
+	
+	
+	<script src="js/libs/modernizr-1.7.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
 </head>
-<body>
-	11:12
+<body id="page">
+	<header>
+		<div id="header" class="grids">
+			<div id="nav" class="navigation round">
+				<ul class="round">
+					<li><a href="index.html" 		title="">Accueil</a></li>
+					<li><a href="forms.html"		title="">forms</a></li>
+					<li><a href="tables.html" 		title="">tables</a></li>
+					<li><a href="images.html"  	title="">images</a></li>
+					<li><a href="listslinks.html" title="">lists & links</a></li>
+				</ul>
+			</div>
+			<div class="grid grid-4">
+				<a href="index.html" title="index">
+				<img src="img/cmbg.png" alt="logo" id="logo" /></a>	
+			</div>
+			
+			<div id="idSlider" class="grid grid-8">
+				<div id="slider-wrapper" >
+		           <div id="slider" class="nivoSlider">
+		               <img src="img/slider/toystory.jpg" alt="" />
+		               <img src="img/slider/up.jpg" alt="" />
+		               <img src="img/slider/walle.jpg" alt="" />
+		               <img src="img/slider/nemo.jpg" alt="" />
+		           </div>
+		       </div>
+				</div>
+		</div>
+		</header>	
+ 	
+	
+	<div class="grids">
+			<div class="grid grid-4">
+					<div class="left">
+						<ul class="">
+							<li><a href="http://inuitcss.com/">inuit.css</a></li>
+							<li>Lorem ipsum dolor</li>
+							<li>Lorem ipsum dolor</li>
+							<li>Lorem ipsum dolor</li>
+							<li>Lorem ipsum dolor</li>
+							<li>Lorem ipsum dolor</li>
+						</ul>
+					</div>
+			</div>
+			<section>
+			<div class="grid grid-12">
+				<h2 class="text-left">titre dwibvpweiubwêoigubw</h2>
+					<table>
+						<thead>
+							<tr>
+								<th></th>
+								<th>Heading</th>
+								<th>Heading</th>
+								<th>Heading</th>
+							</tr>
+						</thead>
+						<tfoot>
+							<tr>
+							<td colspan="4">&copy; Harry Roberts</td>
+							</tr>
+						</tfoot>
+						<tbody>
+							<tr>
+								<th>Lorem</th>
+								<td>ipsum</td>
+								<td>dolor</td>
+								<td>sit</td>
+							</tr>
+							<tr>
+								<th>Lorem</th>
+								<td colspan="2">ipsum</td>
+								<td>sit</td>
+							</tr>
+							<tr>
+								<th>Lorem</th>
+								<td>ipsum</td>
+								<td>dolor</td>
+								<td>sit</td>
+							</tr>
+						</tbody>
+					</table>	
+				</div>
+				</section>
+	</div>
+
+	<footer>
+	<div class="grids">
+		<div class="grid grid-16">
+			<div id="footer" class="grids">
+				
+					<div class="grid grid-4 ">
+							<ul class="">
+								<li><a href="http://inuitcss.com/">inuit.css</a></li>
+								<li>Lorem ipsum dolor</li>
+								<li>Lorem ipsum dolor</li>
+								<li>Lorem ipsum dolor</li>
+								<li>Lorem ipsum dolor</li>
+								<li>Lorem ipsum dolor</li>
+							</ul>
+					</div>
+					<div class="grid grid-4 ">
+							<ul class="">
+								<li>Lorem ipsum dolor</li>
+								<li>Lorem ipsum dolor</li>
+								<li>Lorem ipsum dolor</li>
+								<li>Lorem ipsum dolor</li>
+								<li>Lorem ipsum dolor</li>
+								<li>Lorem ipsum dolor</li>
+							</ul>
+					</div>
+					<div class="grid grid-4 ">
+							<ul class="">
+								<li>Lorem ipsum dolor</li>
+								<li>Lorem ipsum dolor</li>
+								<li>Lorem ipsum dolor</li>
+								<li>Lorem ipsum dolor</li>
+								<li>Lorem ipsum dolor</li>
+								<li>Lorem ipsum dolor</li>
+							</ul>
+					</div>
+					<div class="grid grid-4">
+							<ul class="">
+								<li>Lorem ipsum dolor</li>
+								<li>Lorem ipsum dolor</li>
+								<li>Lorem ipsum dolor</li>
+								<li>Lorem ipsum dolor</li>
+								<li>Lorem ipsum dolor</li>
+								<li>Lorem ipsum dolor</li>
+							</ul>
+					</div>
+					
+			</div>
+		</div>
+	</div>
+	<div id="copyright" class="grids">
+		<ul class="grid grid-16">
+			<li class="left">Chorfa 2011</li>
+		</ul>
+	</div>
+	</footer>
+	
+	
+	<!-- JavaScript at the bottom for fast page loading -->
+	<!--Section de javaScript-->
+	<noscript>
+	<p class="nojavascript"><span>La fonction JavaScript n'est pas prise en charge par votre navigateur. Afin de profiter au maximum de notre site, nous vous recommandons la dernière version de <a href="http://www.getfirefox.com" target="_blank" title="Télécharger Firefox pour PC [nouvelle fenêtre]">Firefox</a> pour PC ou <a href="http://m.opera.com/" target="_blank" title="Télécharger Opéra pour téléphone Mobile [nouvelle fenêtre]">Opéra</a> pour votre téléphone mobile. Si vous avez désactivé la fonction JavaScript de votre navigateur, voici comment le réactiver : <a href="http://www.google.com/support/bin/answer.py?answer=23852" target="_blank" title="Tutorial sur le site de Google [nouvelle fenêtre]">"Comment activer JavaScript"</a>.</span></p>
+	</noscript>
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+ 
+  	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+  	<script>window.jQuery || document.write("<script src='js/libs/jquery-1.6.js'>\x3C/script>")</script>
+ 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery-1.4.3.min.js"></script>
+	<script type="text/javascript" src="js/libs/selectivizr.js"></script>
+	<script type="text/javascript" src="js/mylibs/css3-mediaqueries.js"></script>
+	<script type="text/javascript" src="js/libs/KnocKout.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.nivo.slider.pack.js"></script>
+	<script type="text/javascript" src="js/fancybox/jquery.easing-1.3.pack.js"></script>
+	<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<script type="text/javascript" src="js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="js/libs/cufon.js"></script>
+  <!-- scripts concatenated and minified via ant build script-->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+	<script type="text/javascript">
+   $(window).load(function() {
+       $('#slider').nivoSlider({directionNavHide:false});
+   });
+	//	cufon.now();
+   </script>
+  <!-- end scripts-->
+
+
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix("img, .png_bg"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+  <![endif]-->
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-23207621-1']);
+	  _gaq.push(['_setDomainName', '.chorfa.net']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+
 </body>
 </html>
