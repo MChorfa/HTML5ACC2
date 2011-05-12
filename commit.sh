@@ -1,2 +1,2 @@
 #!/bin/bash
-git add * && git commit -m "un commit" && git push origin master && git status && git log && echo "ca amrche"
+git add * && git commit -m "ajout de modfication" && git push origin master && git status && echo "mise a jour realisee"
